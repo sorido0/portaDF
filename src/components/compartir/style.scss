@@ -1,0 +1,89 @@
+@import "../../style-config/maxins.scss", "../../style-config/variables.scss";
+
+.buttonContacto {
+    height: 35px;
+    width: fit-content;
+    padding: 0 15px;
+    background: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        border: 1px solid white;
+        box-shadow: inset 200px 0 0 0 #0f38c1;
+        color: white;
+    }
+    @include typography(18px, 400, 1);
+
+    .iconButton {
+        width: 20px;
+        height: 20px;
+        background: #2559cd;
+        border-radius: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        -webkit-border-radius: 41px;
+        -moz-border-radius: 41px;
+        -ms-border-radius: 41px;
+        -o-border-radius: 41px;
+       
+        svg {
+            width: 60%;
+            height: 60%;
+            fill: white;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+        }
+
+        
+
+       
+
+    }
+
+}
+
+@keyframes animate__backInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.buttonContacto:hover .iconButton{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: animate__backInRight;
+    background: white;
+    svg {
+        fill: #2559cd;
+    }
+}
+
+
+
+
+

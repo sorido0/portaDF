@@ -1,0 +1,31 @@
+@import "../../style-config/maxins.scss", "../../style-config/variables.scss";
+
+
+.section{
+    padding: 40px 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    &.dark{
+        background: $black;
+    }
+    &.light{
+        background: $black-lighter;
+    }
+
+    .content  {
+        padding: 0 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+        .title{
+            margin-bottom: 1rem;
+            width: 100%;
+            text-align: center;
+            color: $white;
+            max-width: 500px;
+        }
+    }
+}

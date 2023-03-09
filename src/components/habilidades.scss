@@ -1,0 +1,118 @@
+@import "../style-config/maxins.scss", "../style-config/variables.scss";
+
+.habilidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+}
+
+
+
+.habilidad {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: $black-lighter;
+
+    &:hover {
+        background: $black-light;
+        border: 1px white solid;
+        transition: all 0.5s ease;
+
+    }
+
+    h3 {
+        text-align: center;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+
+    svg {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+        animation-name: rotate;
+        animation: 3s rotate reverse infinite;
+        -webkit-animation: 3s rotate reverse infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+}
+
+
+svg:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    animation: reverse;
+    -webkit-animation: reverse;
+}
+
+
+/// descripcion del lenguaje de programacion
+/// 
+
+.descripcionLenguaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background: $black-lighter;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: $black-lighter;
+
+    h3 {
+        text-align: center;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+    }
+}
