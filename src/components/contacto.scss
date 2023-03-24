@@ -1,0 +1,15 @@
+
+@import "../style-config/maxins.scss", "../style-config/variables.scss";
+
+
+.contactoSection{
+    display: flex;
+    width: 70%;
+    margin-top: 45px;
+    background: $black-light;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}

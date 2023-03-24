@@ -9,7 +9,7 @@ export const Body = () => {
   return (
     <div>
         
-        <div className="Intro-section">
+        <div className="Intro-section" id="portafolio">
             <div
                 className="vector-gb"
                 id="parallax"
@@ -17,7 +17,7 @@ export const Body = () => {
             </div>
             <img 
                 src={ cloud }
-                className="cloud-suft"
+                className="cloud"
                 alt="cloud"
             />
             <img 

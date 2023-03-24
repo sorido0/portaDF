@@ -1,0 +1,56 @@
+@import "../../style-config/maxins.scss", "../../style-config/variables.scss";
+
+
+
+
+.contemItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+
+    .filtroIetm {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 20px;
+        list-style-type: none;
+        margin: 30px 0;
+        .itemfiltro {
+            list-style-type: none;
+            color: $white;
+            @include typography(20px, 400, 28px);
+            padding: 10px 20px;
+            margin: 0 2.5px;
+            box-shadow: inset 0 0 0 1px $white;
+            transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            -webkit-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            -ms-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+            margin: 5px;
+            &:hover {
+                color: $black;
+                box-shadow: inset 200px 0 0 0  $white;
+            }
+    
+    
+            border-radius: 45px;
+            -webkit-border-radius: 45px;
+            -moz-border-radius: 45px;
+            -ms-border-radius: 45px;
+            -o-border-radius: 45px;
+            border: $white solid 1px;
+    
+            &.active {
+                color: $black;
+                box-shadow: inset 200px 0 0 0  $white;
+            }
+        }
+    }
+}

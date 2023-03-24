@@ -1,0 +1,99 @@
+@import "../style-config/maxins.scss", "../style-config/variables.scss";
+
+
+.contenPreyectos {
+    margin-top: 2rem;
+    width: 70%;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    .itemProyecto {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+        @include transition;
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .meta-content {
+            visibility: hidden;
+            background: transparent;
+            opacity: 0;
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            padding: 10px;
+            margin-right: 20px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            cursor: pointer;
+            //@include glassmorphsm-effect;
+            @include transition;
+
+            h3 {
+                color: $black;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            .go-ta-cta {
+                display: flex;
+                align-items: center;
+
+                .text {
+                    @include typography(10px, 400, 18px)
+                }
+
+                .arrow-icon {
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 10px;
+                    color: #2559cd;
+                }
+            }
+        }
+
+        &:hover {
+            z-index: 1;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            box-shadow: 0px 0px 33px -8px #2559cd;
+    
+            .meta-content {
+                visibility: visible;
+                background-color: rgba(255, 255, 255, 0.664);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                opacity: 3;
+                transform: translate(-20px);
+                -webkit-transform: translate(-20px);
+                -moz-transform: translate(-20px);
+                -ms-transform: translate(-20px);
+                -o-transform: translate(-20px);
+            }
+        }
+
+
+    }
+}

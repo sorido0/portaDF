@@ -6,11 +6,13 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
     &.dark{
         background: $black;
     }
     &.light{
-        background: $black-lighter;
+        background: $black-light;
     }
 
     .content  {

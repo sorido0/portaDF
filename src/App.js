@@ -1,6 +1,6 @@
 
 
-import { Body, Habilidades } from './components';
+import { Body, Contacto, Footer, Habilidades, Proyectos } from './components';
 
 
 import './app.scss';
@@ -10,6 +10,9 @@ function App() {
         <div>
            <Body />
            <Habilidades />
+           <Proyectos />
+           <Contacto />
+           <Footer />
         </div>
     )
 }
