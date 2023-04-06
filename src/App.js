@@ -1,18 +1,23 @@
 
 
-import { Body, Contacto, Footer, Habilidades, Proyectos } from './components';
+import { Body, Contacto, Footer} from './components';
 
 
 import './app.scss';
+import { Portafolio } from './components/component/Portafolio';
 
 function App() {
+
+
+
+
     return (
         <div>
-           <Body />
-           <Habilidades />
-           <Proyectos />
-           <Contacto />
-           <Footer />
+
+            <Body />
+            <Portafolio />
+            <Contacto />
+            <Footer />
         </div>
     )
 }

@@ -5,35 +5,44 @@ import { Header } from './Header';
 import { Main } from "./Main";
 
 
+
+
+
 export const Body = () => {
-  return (
-    <div>
-        
-        <div className="Intro-section" id="portafolio">
-            <div
-                className="vector-gb"
-                id="parallax"
+    return (
+        <div>
+
+            <div className="Intro-section" id="portafolio">
+                <div
+                    className="vector-gb"
+                    id="parallax"
                 >
+                </div>
+                <img
+                    src={cloud}
+                    className="cloud"
+                    alt="cloud"
+                />
+                <img
+                    src={cloudSoft}
+                    className="cloud-suft"
+                    alt="cloudSoft"
+                />
+
+                <div className="content">
+                    <Header />
+
+                    <Main />
+
+                    {/* <Portafolio /> */}
+                    {/* <Contacto />
+                    <Footer />
+                    */}
+
+                </div>
             </div>
-            <img 
-                src={ cloud }
-                className="cloud"
-                alt="cloud"
-            />
-            <img 
-                src={ cloudSoft }
-                className="cloud-suft"
-                alt="cloudSoft"
-            />   
 
-        <div className="content">
-            <Header />
-            <Main />
-            
-        </div>
-        </div>
 
-        
-    </div>
-  )
+        </div>
+    )
 }

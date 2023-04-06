@@ -1,8 +1,8 @@
+import { TbFileDownload } from "react-icons/tb";
 
 import { Button } from "./compartir";
-
 import lenguajes from "../images/hand.png";
-import iconos from "../images/tech-icons.png";
+//import iconos from "../images/tech-icons.png";
 
 import "./mainScss.scss";
 
@@ -28,11 +28,11 @@ export const Main = () => {
                         Y asesoría de TIC, trabajo como analista de sistemas 
                         en HMRA.
                     </p>
-                    <Button text="Contacto me" />
+                    <Button text="Curriculum" > <TbFileDownload /> </Button>
                 </div>
-                <div className="rightMain">
+                {/* <div className="rightMain">
                     <img src={iconos} alt="iconos" />
-                </div>    
+                </div>     */}
             </div>
           
         </div>

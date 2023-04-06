@@ -16,7 +16,7 @@ export const VerProjectos = ( { proyectos })  => {
                             <h3>{ proyecto.nombre }</h3>
                             <div className="go-to-cita">
                                 <span className="text"> Ver proyecto </span>
-                                <GrShare className="arrow-icon"  color="#2559cd"/>
+                                <GrShare className="arrow-icon"  color="#2559cd" onClick={ () => window.open(proyecto.url, "_blank") }/>
                             </div>
                         </div>
                         <img src={proyecto.imagen} alt={proyecto.nombre} />

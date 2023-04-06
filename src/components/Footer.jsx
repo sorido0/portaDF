@@ -28,15 +28,16 @@ export const Footer = () => {
 						Hablidades 
 					</li>
 					<li className='footerMenuItem' 
+						onClick={ () => scrollToSection("proyectos") }
+					>	
+						Proyectos 
+					</li>
+					<li className='footerMenuItem' 
 						onClick={ () => scrollToSection("blog") }
 					>	
 						Blog & Artículos
 					</li>
-					<li className='footerMenuItem' 
-						onClick={ () => scrollToSection("contacto") }
-					>	
-						Contacto 
-					</li>
+					
 				</ul>
 				<div className="footerSocials">
 					{

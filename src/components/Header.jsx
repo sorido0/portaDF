@@ -1,9 +1,11 @@
 
 
 import logo from '../images/logoLetra.png'
+import { BsFillBriefcaseFill } from "react-icons/bs";
 
 import '../components/style.scss'
 import { Button } from './compartir/Button'
+import { scrollToSection } from './utils/helpers'
 
 export const Header = () => {
   return (
@@ -14,10 +16,10 @@ export const Header = () => {
         </div>
 
         <menu className="navegacion">
-          <span className='navegacionItem'> Porfolio </span>
-          <span className='navegacionItem'> Proyecto </span>
-          <span className='navegacionItem'> Blog & Articulos </span>
-          <Button  text="Contacto"/>
+          <span className='navegacionItem' onClick={ () => scrollToSection("portafolio") }> Porfolio </span>
+          <span className='navegacionItem' onClick={ () => scrollToSection("proyectos") } > Proyecto </span>
+          <span className='navegacionItem' onClick={ () => scrollToSection("blog") }> Blog & Articulos </span>
+          <Button  text="Contacto" accion={ () => scrollToSection("contacto") }> <BsFillBriefcaseFill /> </Button>
         </menu>
 
     </div>
