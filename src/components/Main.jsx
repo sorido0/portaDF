@@ -28,7 +28,7 @@ export const Main = () => {
                         Y asesoría de TIC, trabajo como analista de sistemas 
                         en HMRA.
                     </p>
-                    <Button text="Curriculum" > <TbFileDownload /> </Button>
+                    <Button text="Curriculum" accion={ () => window.open("https://drive.google.com/file/d/1RfbsRxyi1xgidpQBLHYT6XlpTIxRQm7Y/view?usp=sharing", "_blank") } > <TbFileDownload /> </Button>
                 </div>
                 {/* <div className="rightMain">
                     <img src={iconos} alt="iconos" />

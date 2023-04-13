@@ -42,10 +42,10 @@ export const proyectosRealizados = [
         },
         {
             "id": 5,
-            "nombre": "Proyecto 5",
+            "nombre": "Piedra papel o tijera",
             "descripcion": "Descripcion del proyecto 2",
-            "imagen": "https://picsum.photos/200/300",
-            "url": "https://www.google.com",
+            "imagen": "https://res.cloudinary.com/sorido0/image/upload/v1680963234/proyectos/bt0p4djmjtzggfq45efb.png",
+            "url": "https://sorido0.github.io/piedraPapelTijeras/",
             "categoria": "HTML , css , js",
             "tipo": "web"
         },
