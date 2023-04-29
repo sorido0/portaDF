@@ -32,10 +32,13 @@
 
 
 .introMAin {
-    flex-grow: 0;
+    
     display: flex;
     align-items: flex-end;
-    padding-top: 1rem;
+
+    @include small-screen {
+        padding-top: 10px;
+    }
 
     .layoutMain {
         display: flex;
@@ -49,9 +52,9 @@
                 display: flex;
                 flex-direction: column;
                 color: $white;
-                
 
-                
+
+
                 .small-text {
                     @include typography(42px, 400, 48px);
                     display: flex;

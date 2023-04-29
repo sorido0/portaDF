@@ -1,60 +1,64 @@
 
 import { useParams } from "react-router-dom";
-import { Header } from "../Header";
+
+import { blogArtitulos } from "../../helps";
+import ReactPlayer from "react-player";
 
 export const BlogArtitulos = () => {
     // Get article id from URL
     const { id } = useParams();
 
-    // Sample data for articles
-    const articulos = [
-        {
-            id: 1,
-            title: "articulo 1",
-            date: "April 10, 2023",
-            content: "This is the content of Article 1",
-            author: "John Doe",
-            mediaType: "image",
-            mediaUrl: "https://example.com/image1.jpg",
-        },
-        {
-            id: 2,
-            title: "articulo 2",
-            date: "April 9, 2023",
-            content: "This is the content of Article 2",
-            author: "Jane Smith",
-            mediaType: "video",
-            mediaUrl: "https://example.com/video2.mp4",
-        },
-        // Add more articles here
-    ];
-
     // Find the article with the matching id
-    const articulo = articulos.find((articulo) => articulo.id === Number(id));
-
+    const articulo = blogArtitulos.find((articulo) => articulo.id === Number(id));
+    //console.log(articulo);
     return (
-        <div className="gb-black w-full h-full">
+        <>
 
-            {/* {articulo ? (
-                <div className="bg-black">
-                    <Header />
-                    <h1 className="text-3xl font-bold mb-4">{articulo.title}</h1>
-                    {articulo.mediaType === "image" && (
-                        <img src={articulo.mediaUrl} alt={articulo.title} className="mb-4" />
-                    )}
-                    {articulo.mediaType === "video" && (
-                        <video src={articulo.mediaUrl} alt={articulo.title} className="mb-4" controls />
-                    )}
-                    <p className="text-gray-500 mb-2">{articulo.date}</p>
-                    <p className="mb-4">{articulo.content}</p>
-                    <p className="text-gray-500">Author: {articulo.author}</p>
+            {articulo ? (
+                <div className="bg-black container flex-col p-5 w-full justify-center ">
+                    <div className="flex justify-center pt-5">
+                        <h1 className="text-white text-3xl"> {articulo.titulo} </h1>
+                    </div>
+                    <div className="flex justify-center pt-5">
+                        {articulo.mediaType === "imagen" && (
+                            <img src={articulo.imgUrl} alt={articulo.title} className="mb-4" />
+                        )}
+                        {articulo.mediaType === "video" && (
+                            <ReactPlayer url={articulo.videoUrl} alt={articulo.title} className="mb-4" controls />
+                        )}
+                    </div>
+                    <div className="flex justify-center pt-5">
+                        <div className="w-[75%] md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 m-2 flex-col">
+
+                            <blockquote className="m-3">
+                              
+                                    {articulo.contenido.parrafo1?   <p className="text-lg font-medium text-justify"> {articulo.contenido.parrafo1}  <br /> <br /> </p>  : null}
+                                    {articulo.contenido.parrafo2?   <p className="text-lg font-medium text-justify"> {articulo.contenido.parrafo2}  <br /><br /> </p> : null}
+                                    {articulo.contenido.parrafo3?   <p className="text-lg font-medium text-justify"> {articulo.contenido.parrafo3}  <br /><br /> </p> : null}
+                                    {articulo.contenido.parrafo4?   <p className="text-lg font-medium text-justify"> {articulo.contenido.parrafo4}  <br /><br /> </p> : null}
+                                
+                            </blockquote>
+                            <figcaption className="font-medium m-3 ">
+                                <div className="text-sky-500 dark:text-sky-400">
+                                    {articulo.author}
+                                </div>
+                                <div className="text-slate-700 dark:text-slate-500">
+                                    {articulo.Fecha}
+                                </div>
+                            </figcaption>
+                        </div>
+
+                    </div>
                 </div>
             ) : (
                 <p>Article not found.</p>
-            )} */}
-        </div>
+            )}
+        </>
     );
 };
+
+
+
 
 
 

@@ -12,7 +12,7 @@ import { conocimiento, borderStyler } from '../helps';
 export const Habilidades = () => {
 
     const [verD, setverD] = useState(false);
-    const [cambioLenguaje, setcambioLenguaje] = useState("hola");
+    const [cambioLenguaje, setcambioLenguaje] = useState("");
     const [NombreDescripcion, setNombreDescripcion] = useState({ nombreW: "", descripcionW: "" });
 
     const descripcionDelenguajes = ({ lengua = "mmgv" }) => {

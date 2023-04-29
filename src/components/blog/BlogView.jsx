@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 
 
 
 export const BlogView = ({
-    key,
+    id,
     titulo,
     fecha,
     contenido,
@@ -14,8 +15,9 @@ export const BlogView = ({
 
     return (
 
-        <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 m-2" key={key}>
-            <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={imgUrl} alt="" width="384" height="512" />
+        <Link to={`/articulo/${id}`} className="w-full h-full bg-black">
+        <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 m-2" >
+            <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={imgUrl} alt={titulo} />
 
             <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                 <div className="flex justify-center pt-5">
@@ -36,6 +38,6 @@ export const BlogView = ({
                 </figcaption>
             </div>
         </figure>
-
+        </Link>
     )
 }

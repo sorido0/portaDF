@@ -1,7 +1,7 @@
 
 // Public and private routes 
 
-import { Route, Router, Routes,  } from "react-router-dom"
+import { Route, Routes  } from "react-router-dom"
 import App from "../App"
 import { BlogPagina } from "../components/blog"
 import { BlogArtitulos } from "../components/blog/BlogArtituclo"

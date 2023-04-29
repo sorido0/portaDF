@@ -31,7 +31,7 @@ export const Body = () => {
 
                 <div className="content">
                     <Header />
-
+                      
                     <Main />
 
                     {/* <Portafolio /> */}

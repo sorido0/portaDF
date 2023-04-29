@@ -7,8 +7,7 @@ export const ContactoInfomacion = () => {
   return (
     <div className="contenContacto">
         <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Cupiditate quam tempora natus iusto praesentium amet.
+        Mi objetivo es brindarle un servicio excepcional y garantizar que esté satisfecho con mi trabajo. Por lo tanto, no dude en contactarme en cualquier momento, ya sea que tenga preguntas, comentarios o sugerencias.
         </h4>
         <div className='opcionContacto'>
             <FcPhoneAndroid className='iconoContacto'/>

@@ -43,7 +43,7 @@ export const Proyectos = () => {
             title="Mira mis proyectos"
             background="light"
         >
-
+            <br />
             <Filtro filtroProyectos={(id) => filtroProyectos(id)} />
 
             <VerProjectos proyectos={data} />
