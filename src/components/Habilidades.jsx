@@ -31,8 +31,10 @@ export const Habilidades = () => {
             setverD(!verD)
         }
 
-        return ""
+        console.log(lengua)
+        return lengua
     }
+
 
     
     const retonarDescripcionYnombre = ({ lengua = "yunito" }) => {
@@ -48,14 +50,30 @@ export const Habilidades = () => {
     
     useEffect(() => {
        // let comparaLenfua = cambioLenguaje;
-        const { nombreF, descripcionF } = retonarDescripcionYnombre({ lengua: cambioLenguaje })
-        setNombreDescripcion({ nombreF, descripcionF })
+        // const { nombreF, descripcionF } = retonarDescripcionYnombre({ lengua: cambioLenguaje })
+        setNombreDescripcion(retonarDescripcionYnombre({ lengua: cambioLenguaje }))
     }, [cambioLenguaje])
 
 
 
+    // useEffect(() => {
+    //     const retonarDescripcionYnombre = ({ lengua = "yunito" }) => {
+    //         let descripcionF = "";
+    //         let nombreF = "";
+    //         conocimiento.filter(nombre => nombre.nombre === cambioLenguaje ? descripcionF = nombre.desc : "")
+    //         conocimiento.filter(nombre => nombre.nombre === cambioLenguaje ? nombreF = nombre.nombre : "")
+    //         return {
+    //             descripcionF,
+    //             nombreF
+    //         }
+    //     }
+    //     const { nombreF, descripcionF } = retonarDescripcionYnombre({ lengua: cambioLenguaje })
+    // }, [cambioLenguaje])
+    
 
-    const {nombreF, descripcionF } = NombreDescripcion;
+
+
+   const {nombreF, descripcionF } = NombreDescripcion;
    
     return (
         <Section
