@@ -98,3 +98,16 @@
  
 }
 
+@media screen and (max-width: 768px){
+    .noseForm{
+        width: 90%;
+        form{
+            flex-direction: column;
+        }
+        .form-group{
+            width: 90%;
+        }
+    }
+}
+
+

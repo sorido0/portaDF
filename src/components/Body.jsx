@@ -5,9 +5,6 @@ import { Header } from './Header';
 import { Main } from "./Main";
 
 
-
-
-
 export const Body = () => {
     return (
         <div>
@@ -33,12 +30,6 @@ export const Body = () => {
                     <Header />
                       
                     <Main />
-
-                    {/* <Portafolio /> */}
-                    {/* <Contacto />
-                    <Footer />
-                    */}
-
                 </div>
             </div>
 

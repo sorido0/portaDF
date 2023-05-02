@@ -14,7 +14,7 @@ export const BlogCart = ({
     imgUrl,
     videoUrl,
 }) => {
-    console.log(contenido)
+   // console.log(contenido)
   return (
     <div className="blog-card">
         <div>

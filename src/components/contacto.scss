@@ -13,3 +13,11 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
+@media screen and (max-width: 768px){
+    .contactoSection{
+        width: 90%;
+        flex-direction: column;
+    }
+}
+    

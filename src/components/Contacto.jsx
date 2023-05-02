@@ -11,7 +11,7 @@ import { Formulario } from "./Forms/Formulario"
 export const Contacto = () => {
     
     return (
-        <Section id="contacto" title="Tienes alguna pregunta, puedes contactarme es gratis😎? " background="light" >
+        <Section id="contacto" title="Me gustaria que trabajaramos juntos, puedes contactarme ? " background="light" >
 
             <div className="contactoSection">
                 <ContactoInfomacion />

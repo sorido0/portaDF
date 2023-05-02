@@ -16,9 +16,9 @@ function App() {
         <div>
 
             <Body />
-            {/* <Portafolio /> */}
-            {/* <Contacto /> */}
-            {/* <Footer /> */}
+            <Portafolio />
+            <Contacto />
+            <Footer />
         </div>
     )
 }

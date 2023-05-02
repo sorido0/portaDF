@@ -12,7 +12,7 @@ export const SecciontBlog = () => {
     <Section 
         title="Blog & Articulos"
         id="blog"
-        className="bg-black"
+        className="bg-black items-center justify-center flex"
     >
         <div className="blog-content-wraooer">
 
