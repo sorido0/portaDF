@@ -16,6 +16,7 @@ export const BlogCart = ({
 }) => {
    // console.log(contenido)
   return (
+
     <div className="blog-card">
         <div>
             <img className="image-section" src={imgUrl} alt={titulo} />
@@ -33,5 +34,6 @@ export const BlogCart = ({
             </div>
         </div>
     </div>
+  
   )
 }
