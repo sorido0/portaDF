@@ -9,7 +9,7 @@ export const proyectosRealizados = [
             "descripcion": "Descripcion del proyecto 1",
             "imagen": "https://res.cloudinary.com/sorido0/image/upload/v1680734129/proyectos/rm2wxqqlhgjts6q7gkai.png",
             "url": "https://lambent-piroshki-182aab.netlify.app/",
-            "categoria": "React",
+            "categoria": "React, Redux, tailwind",
             "tipo": "app"
         },
         {
@@ -51,12 +51,12 @@ export const proyectosRealizados = [
         },
         {
             "id": 6,
-            "nombre": "Proyecto 6",
-            "descripcion": "Descripcion del proyecto 3",
-            "imagen": "https://picsum.photos/200/300",
-            "url": "https://www.google.com",
-            "categoria": "HTML , css , js",
-            "tipo": "web"
+            "nombre": "Imagen UP",
+            "descripcion": "Cree una aplicacion para subir imagenes y guardarlas en una base de datos y utilizarlas en cualquier proyecto",
+            "imagen": "https://res.cloudinary.com/sorido0/image/upload/v1684269447/upimg/p5xwa2iecgf70l5mf4mp.png",
+            "url": "https://upimg.netlify.app",
+            "categoria": "HTML , css , js, react, node, tailwind",
+            "tipo": "app"
         }
     ]
 
